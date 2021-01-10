@@ -1,12 +1,10 @@
 /// @description Enemy
 
 
-//move
+//movement
 hsp = moving_speed * dir; 
 vsp += grav;
   
-  
-//collide
 move_and_collide();
 
 
