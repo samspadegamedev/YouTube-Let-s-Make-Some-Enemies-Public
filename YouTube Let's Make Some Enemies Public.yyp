@@ -1,12 +1,18 @@
 {
   "resources": [
     {"id":{"name":"obj_crusher","path":"objects/obj_crusher/obj_crusher.yy",},"order":2,},
+    {"id":{"name":"obj_player_platformer","path":"objects/obj_player_platformer/obj_player_platformer.yy",},"order":3,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":0,},
+    {"id":{"name":"player_parent","path":"objects/player_parent/player_parent.yy",},"order":1,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":1,},
     {"id":{"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},"order":0,},
     {"id":{"name":"solid_parent","path":"objects/solid_parent/solid_parent.yy",},"order":1,},
+    {"id":{"name":"spr_player_platformer","path":"sprites/spr_player_platformer/spr_player_platformer.yy",},"order":0,},
     {"id":{"name":"spr_crusher","path":"sprites/spr_crusher/spr_crusher.yy",},"order":1,},
+    {"id":{"name":"obj_player_swapper","path":"objects/obj_player_swapper/obj_player_swapper.yy",},"order":2,},
     {"id":{"name":"collision_script_functions","path":"scripts/collision_script_functions/collision_script_functions.yy",},"order":1,},
+    {"id":{"name":"spr_player_topdown","path":"sprites/spr_player_topdown/spr_player_topdown.yy",},"order":1,},
+    {"id":{"name":"obj_player_topdown","path":"objects/obj_player_topdown/obj_player_topdown.yy",},"order":4,},
     {"id":{"name":"rm_main","path":"rooms/rm_main/rm_main.yy",},"order":0,},
   ],
   "Options": [
@@ -33,6 +39,8 @@
     {"folderPath":"folders/Walls.yy","order":2,"resourceVersion":"1.0","name":"Walls","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Enemies.yy","order":3,"resourceVersion":"1.0","name":"Enemies","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Enemies/Masks.yy","order":0,"resourceVersion":"1.0","name":"Masks","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Player Objects.yy","order":4,"resourceVersion":"1.0","name":"Player Objects","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Player Objects/Player Masks.yy","order":0,"resourceVersion":"1.0","name":"Player Masks","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
