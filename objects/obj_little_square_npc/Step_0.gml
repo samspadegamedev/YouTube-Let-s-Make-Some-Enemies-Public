@@ -16,26 +16,28 @@ switch (state) {
 		
 		//built in alarm 0 running - switches to WAITING
 		
+		//switch to jumping if colliding with player
 		if (place_meeting(x, y, player_parent)) {
 			alarm[0] = -1;
 			state = "JUMPING";
 			vsp = -5;
 			jump_count -= 1;
+			hsp = 0;
 		}
 		
 		break;
 		
-	case "WAITING": 
-	
-		hsp = 0;
+	case "WAITING": 	
 	
 		//built in alarm 1 running - switches to JUMPING
 		
+		//switch to jumping if colliding with player
 		if (place_meeting(x, y, player_parent)) {
 			alarm[1] = -1;
 			state = "JUMPING";
 			vsp = -5;
 			jump_count -= 1;
+			hsp = 0;
 		}
 		
 		break;
