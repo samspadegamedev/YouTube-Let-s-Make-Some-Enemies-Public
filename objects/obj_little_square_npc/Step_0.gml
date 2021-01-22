@@ -19,10 +19,7 @@ switch (state) {
 		//switch to jumping if colliding with player
 		if (place_meeting(x, y, player_parent)) {
 			alarm[0] = -1;
-			state = "JUMPING";
-			vsp = -5;
-			jump_count -= 1;
-			hsp = 0;
+			enter_jumping_state();
 		}
 		
 		break;
@@ -34,31 +31,22 @@ switch (state) {
 		//switch to jumping if colliding with player
 		if (place_meeting(x, y, player_parent)) {
 			alarm[1] = -1;
-			state = "JUMPING";
-			vsp = -5;
-			jump_count -= 1;
-			hsp = 0;
+			enter_jumping_state();
 		}
 		
 		break;
 		
 		
 	case "JUMPING": 
-	
-		hsp = 0;
-	
+		
 		if (place_meeting(x, y + 1, solid_parent)) {
 		    if (jump_count > 0) {
-				vsp = -5;
-				jump_count -= 1;			
+				jump();			
 			} else {
-				jump_count = 3;
-				state = "WAITING";
-				alarm[1] = room_speed + irandom(room_speed);
+				enter_waiting_state();
 			}
 		}	
-		
-		
+				
 		break;
 		
 
