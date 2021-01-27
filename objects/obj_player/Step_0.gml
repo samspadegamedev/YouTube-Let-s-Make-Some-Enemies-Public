@@ -11,6 +11,8 @@ hsp = (_right - _left) * movement_speed;
 vsp += grav;
 
 if (_jump_pressed) && (place_meeting(x, y + 1, solid_parent)) {
-	vsp += jump_speed;
+	vsp = jump_speed;
 }
+
+move_and_collide();
 

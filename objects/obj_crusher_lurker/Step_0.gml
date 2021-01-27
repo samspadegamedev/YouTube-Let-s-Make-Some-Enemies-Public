@@ -8,8 +8,8 @@ switch (state) {
     case "LURKING": {
 		
 		//wait for player to be directly under
-		if (instance_exists(player_parent)) {
-			if (collision_line(x, y, x, y + room_height, player_parent, false, true) != noone) state = "FALLING";	
+		if (instance_exists(obj_player)) {
+			if (collision_line(x, y, x, y + room_height, obj_player, false, true) != noone) state = "FALLING";	
 		}
 		
         break;
