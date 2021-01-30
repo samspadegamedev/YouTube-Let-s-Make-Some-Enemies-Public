@@ -1,12 +1,27 @@
 /// @description Little Square NPC
 
 
-//method variables
 enter_jumping_state = function() {
-	state = "JUMPING";
-	jump_count = jump_max;
 	hsp = 0;
+	state = "JUMPING";
+	jumps_remaining = jump_max;
 	jump();
+}
+
+jump = function() {
+	vsp = jump_speed;
+	jumps_remaining -= 1;
+}
+
+enter_waiting_state = function() {
+	hsp = 0;
+	state = "WAITING";
+	alarm[1] = room_speed + irandom(room_speed);
+}
+
+enter_walking_state = function() {
+	state = "WALKING";
+	alarm[0] = (room_speed * 3) + irandom(room_speed);
 }
 
 enter_waiting_state = function() {
@@ -28,10 +43,10 @@ grav = 0.5;
 dir = 1;
 
 //jump state variables
-jump_max = 3;
-jump_count = jump_max;
 jump_speed = -5;
+jump_max = 3;
+jumps_remaining = jump_max;
 
-//state variables
-state = "WALKING";
-alarm[0] = (room_speed * 3) + irandom(room_speed);
+//initilize state
+enter_walking_state();
+

@@ -68,8 +68,8 @@
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0ab6424d-fa33-4e33-b5d4-0e00ec7fd3cd","tags":[],"resourceType":"GMImageLayer",},
   ],
   "parent": {
-    "name": "Player Masks",
-    "path": "folders/Player Objects/Player Masks.yy",
+    "name": "Player Object",
+    "path": "folders/Player Object.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_player_platformer",

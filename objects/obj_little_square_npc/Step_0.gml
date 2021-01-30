@@ -1,4 +1,4 @@
-/// @description Little Square
+/// @description Little Square NPC
 
 
 
@@ -17,7 +17,7 @@ switch (state) {
 		//built in alarm 0 running - switches to WAITING
 		
 		//switch to jumping if colliding with player
-		if (place_meeting(x, y, player_parent)) {
+		if (place_meeting(x, y, obj_player)) {
 			alarm[0] = -1;
 			enter_jumping_state();
 		}
@@ -26,10 +26,10 @@ switch (state) {
 		
 	case "WAITING": 	
 	
-		//built in alarm 1 running - switches to JUMPING
+		//built in alarm 1 running - switches to WALKING
 		
 		//switch to jumping if colliding with player
-		if (place_meeting(x, y, player_parent)) {
+		if (place_meeting(x, y, obj_player)) {
 			alarm[1] = -1;
 			enter_jumping_state();
 		}
@@ -40,13 +40,12 @@ switch (state) {
 	case "JUMPING": 
 		
 		if (place_meeting(x, y + 1, solid_parent)) {
-		    if (jump_count > 0) {
+		    if (jumps_remaining > 0) {
 				jump();			
 			} else {
 				enter_waiting_state();
 			}
 		}	
-				
 		break;
 		
 
