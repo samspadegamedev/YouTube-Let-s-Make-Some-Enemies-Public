@@ -32,7 +32,7 @@ enter_waiting_state = function() {
 
 jump = function() {
 	vsp = jump_speed;
-	jump_count -= 1;
+	jumps_remaining -= 1;
 }
 
 //movement variables
