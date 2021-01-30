@@ -8,10 +8,9 @@ _jump_pressed = keyboard_check_pressed(vk_space);
 
 
 hsp = (_right - _left) * movement_speed;
-if (_jump_pressed) && (place_meeting(x, y + 1, solid_parent)) {
-	vsp = jump_speed;
-}
-
 vsp += grav;
-move_and_collide();
+
+if (_jump_pressed) && (place_meeting(x, y + 1, solid_parent)) {
+	vsp += jump_speed;
+}
 

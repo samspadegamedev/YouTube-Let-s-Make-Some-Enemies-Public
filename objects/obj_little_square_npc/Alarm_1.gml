@@ -1,4 +1,5 @@
 /// @description Waiting - Little Square NPC
 
 
-enter_walking_state();
+state = "WALKING";
+alarm[0] = (room_speed * 3) + irandom(room_speed);
