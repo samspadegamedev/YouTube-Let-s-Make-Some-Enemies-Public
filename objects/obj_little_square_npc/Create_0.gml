@@ -24,6 +24,16 @@ enter_walking_state = function() {
 	alarm[0] = (room_speed * 3) + irandom(room_speed);
 }
 
+enter_waiting_state = function() {
+	state = "WAITING";
+	hsp = 0;
+	alarm[1] = room_speed + irandom(room_speed);
+}
+
+jump = function() {
+	vsp = jump_speed;
+	jump_count -= 1;
+}
 
 //movement variables
 vsp = 0;
@@ -39,3 +49,4 @@ jumps_remaining = jump_max;
 
 //initilize state
 enter_walking_state();
+

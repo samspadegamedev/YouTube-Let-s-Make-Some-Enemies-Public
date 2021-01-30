@@ -46,7 +46,6 @@ switch (state) {
 				enter_waiting_state();
 			}
 		}	
-		
 		break;
 		
 
