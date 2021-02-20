@@ -5,11 +5,11 @@
 switch (state) {
 
     //lurking state
-    case "LURKING": {
+    case "WAITING": {
 		
 		//wait for player to be directly under
-		if (instance_exists(obj_player)) {
-			if (collision_line(x, y, x, y + room_height, obj_player, false, true) != noone) state = "FALLING";	
+		if (player_detected()) {
+			state = "FALLING";	
 		}
 		
         break;
@@ -21,9 +21,9 @@ switch (state) {
 		vsp += grav;
 		
 		//state is changed to RISING when alarm fires
-		if (alarm[0] == -1) {
+		if (alarm[1] == -1) {
 	        if (place_meeting(x, y + 1, solid_parent)) {
-	            alarm[0] = room_speed;
+	            alarm[1] = room_speed;
 	        }
 		}
 		
@@ -36,7 +36,7 @@ switch (state) {
 		vsp += -grav;
 		vsp = clamp(vsp, -2, 0); 
 		
-        if (place_meeting(x, y - 1, solid_parent)) state = "LURKING";
+        if (place_meeting(x, y - 1, solid_parent)) state = "WAITING";
 		
         break;    
     }
