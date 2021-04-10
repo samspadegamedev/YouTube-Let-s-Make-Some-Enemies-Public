@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,12 +24,12 @@
   "gridX": 1,
   "gridY": 1,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_enemy/spr_enemy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_enemy/spr_enemy.yy",},"LayerId":{"name":"0ab6424d-fa33-4e33-b5d4-0e00ec7fd3cd","path":"sprites/spr_enemy/spr_enemy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"resourceVersion":"1.0","name":"442058bc-692a-428b-929f-c34d650b1a58","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_mask/spr_mask.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_mask/spr_mask.yy",},"LayerId":{"name":"0ab6424d-fa33-4e33-b5d4-0e00ec7fd3cd","path":"sprites/spr_mask/spr_mask.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},"resourceVersion":"1.0","name":"442058bc-692a-428b-929f-c34d650b1a58","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},
+    "spriteId": {"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 0.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"faebed25-0101-41ce-913c-2edc4ccba44b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_enemy/spr_enemy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"72641635-b0c5-423f-89ea-b7cd594f3dd1","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"442058bc-692a-428b-929f-c34d650b1a58","path":"sprites/spr_mask/spr_mask.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"modifiers":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack",},
     ],
     "visibleRange": null,
@@ -54,26 +54,25 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 20,
-    "yorigin": 20,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},
+    "parent": {"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_enemy",
+    "name": "spr_mask",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"0ab6424d-fa33-4e33-b5d4-0e00ec7fd3cd","tags":[],"resourceType":"GMImageLayer",},
   ],
-  "nineSlice": null,
   "parent": {
-    "name": "Masks",
-    "path": "folders/Enemies/Masks.yy",
+    "name": "Walls",
+    "path": "folders/Walls.yy",
   },
   "resourceVersion": "1.0",
-  "name": "spr_enemy",
+  "name": "spr_mask",
   "tags": [],
   "resourceType": "GMSprite",
 }

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_player_platformer",
-    "path": "sprites/spr_player_platformer/spr_player_platformer.yy",
+    "name": "spr_tiny_enemy",
+    "path": "sprites/spr_tiny_enemy/spr_tiny_enemy.yy",
   },
   "solid": false,
   "visible": true,
@@ -21,17 +21,17 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Player Object",
-    "path": "folders/Player Object.yy",
+    "name": "Enemies",
+    "path": "folders/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_player",
+  "name": "obj_flyer",
   "tags": [],
   "resourceType": "GMObject",
 }
