@@ -1,26 +1,25 @@
-/// @description Moving Crusher
+/// @description Crusher
 
 
-//states - waiting, falling, rising
+//states - seeking, falling, rising
 switch (state) {
 
-    //lurking state
+    //seeking state
     case "SEEKING": {
-
-		//seek player
-		with (obj_player) {
-			other.hsp += sign(x - other.x) * other.accel;
+	
+		//move towards the player
+		if (instance_exists(obj_player)) {
+			hsp += sign(obj_player.x - x) * accel_force;
 		}
 
 		if (limit_speed) {
 			hsp = clamp(hsp, -max_speed, max_speed);
 		}
-
-
+	
 		//wait for player to be directly under
 		if (player_detected()) {
-			hsp = 0;
 			state = "FALLING";	
+			hsp = 0;
 		}
 		
         break;
@@ -32,9 +31,9 @@ switch (state) {
 		vsp += grav;
 		
 		//state is changed to RISING when alarm fires
-		if (alarm[0] == -1) {
+		if (alarm[1] == -1) {
 	        if (place_meeting(x, y + 1, solid_parent)) {
-	            alarm[0] = room_speed;
+	            alarm[1] = room_speed;
 	        }
 		}
 		
@@ -53,7 +52,6 @@ switch (state) {
     }
     
 }
-
 
 move_and_collide();
 

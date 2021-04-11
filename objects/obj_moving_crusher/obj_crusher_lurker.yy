@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tiny_enemy",
-    "path": "sprites/spr_tiny_enemy/spr_tiny_enemy.yy",
+    "name": "spr_crusher",
+    "path": "sprites/spr_crusher/spr_crusher.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,16 +23,16 @@
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":1,"eventType":2,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Simple Flyers",
-    "path": "folders/Enemies/Simple Flyers.yy",
+    "name": "Enemies",
+    "path": "folders/Enemies.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_flyer_2",
+  "name": "obj_crusher_lurker",
   "tags": [],
   "resourceType": "GMObject",
 }

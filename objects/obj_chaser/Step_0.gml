@@ -1,9 +1,9 @@
 /// @description Chaser
 
 
-with (obj_player) {
-	other.hsp += sign(x - other.x) * other.accel;
-	other.vsp += sign(y - other.y) * other.accel;
+if (instance_exists(obj_player)) {
+	hsp += sign(obj_player.x - x) * accel_force;
+	vsp += sign(obj_player.y - y) * accel_force;
 }
 
 if (limit_speed) {
@@ -12,4 +12,3 @@ if (limit_speed) {
 }
 
 move_and_collide();
-

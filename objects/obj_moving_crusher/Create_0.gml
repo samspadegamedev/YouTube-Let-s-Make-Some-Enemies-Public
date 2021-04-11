@@ -1,4 +1,4 @@
-/// @description Moving Crusher
+/// @description Crusher
 
 
 //method variables
@@ -13,13 +13,16 @@ player_detected = function() {
 	return false;
 }
 
-grav = 1;
 
-hsp = 0;
+//movement variables
 vsp = 0;
-accel = 0.1;
+hsp = 0;
+grav = 1;
+accel_force = 0.1;
 limit_speed = true;
-max_speed = 2;
+max_speed = 3;
+
+//state variables
+state  = "SEEKING";
 
 
-state = "SEEKING";
