@@ -1,11 +1,12 @@
 {
   "resources": [
-    {"id":{"name":"obj_crusher_auto","path":"objects/obj_crusher_auto/obj_crusher_auto.yy",},"order":4,},
+    {"id":{"name":"obj_crusher_auto","path":"objects/obj_crusher_auto/obj_crusher_auto.yy",},"order":5,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":2,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":0,},
-    {"id":{"name":"obj_crusher_lurker","path":"objects/obj_crusher_lurker/obj_crusher_lurker.yy",},"order":5,},
+    {"id":{"name":"obj_crusher_lurker","path":"objects/obj_crusher_lurker/obj_crusher_lurker.yy",},"order":6,},
     {"id":{"name":"obj_little_square","path":"objects/obj_little_square/obj_little_square.yy",},"order":1,},
     {"id":{"name":"spr_mask","path":"sprites/spr_mask/spr_mask.yy",},"order":0,},
+    {"id":{"name":"obj_little_square_jumper_crusher","path":"objects/obj_little_square_jumper_crusher/obj_little_square_jumper_crusher.yy",},"order":4,},
     {"id":{"name":"solid_parent","path":"objects/solid_parent/solid_parent.yy",},"order":1,},
     {"id":{"name":"obj_chaser","path":"objects/obj_chaser/obj_chaser.yy",},"order":0,},
     {"id":{"name":"obj_little_square_npc","path":"objects/obj_little_square_npc/obj_little_square_npc.yy",},"order":2,},
@@ -52,7 +53,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.2.556",
+    "IDEVersion": "2.3.2.560",
   },
   "resourceVersion": "1.4",
   "name": "YouTube Let's Make Some Enemies Public",

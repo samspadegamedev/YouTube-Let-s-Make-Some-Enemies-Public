@@ -1,4 +1,4 @@
-/// @description Little Square Jumper
+/// @description Little Square Jumper Crusher
 
 
 enter_jumping_state = function() {
@@ -14,9 +14,23 @@ enter_waiting_state = function() {
 }
 
 enter_walking_state = function() {
+	if (instance_exists(obj_player)) {
+		dir = sign(obj_player.x - x);
+	}
 	state = "WALKING";
 }
 
+//method variables
+player_detected = function() {
+	//wait for player to be directly under
+	if (instance_exists(obj_player)) {
+		if (collision_line(x, y, x, y + room_height, obj_player, false, true) != noone) &&
+			(collision_line(x, y, obj_player.x, obj_player.y, solid_parent, false, true) == noone) {	
+			return true;	
+		}
+	}
+	return false;
+}
 
 
 //movement variables
@@ -27,7 +41,7 @@ grav = 0.5;
 dir = 1;
 
 //jump state variables
-jump_speed = -7;
+jump_speed = -14;
 jump_force = 8;
 
 //vision cone variables

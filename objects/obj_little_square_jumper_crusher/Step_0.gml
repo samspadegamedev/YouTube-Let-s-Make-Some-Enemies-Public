@@ -1,4 +1,4 @@
-/// @description Little Square Jumper
+/// @description Little Square Jumper Crusher
 
 
 
@@ -42,9 +42,23 @@ switch (state) {
 		if (place_meeting(x, y + 1, solid_parent)) {
 		    enter_waiting_state();
 		}	
-		
+
+		//wait for player to be directly under
+		if (player_detected()) {
+			hsp = 0;
+			vsp = 0;
+			state = "FALLING";	
+		}
+
 		break;
 		
+	}
+
+	case "FALLING": {
+	    if (place_meeting(x, y + 1, solid_parent)) {
+	        enter_waiting_state();
+	    }		
+		break;
 	}
 
 }
